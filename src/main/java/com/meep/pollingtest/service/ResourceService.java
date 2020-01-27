@@ -1,11 +1,10 @@
 package com.meep.pollingtest.service;
 
-import com.meep.pollingtest.bean.Resource;
+import com.meep.pollingtest.bean.ResourceCollection;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
-
-import java.util.Collection;
 
 @Service
 public interface ResourceService {
-    Collection<Resource> updateAvailableVehicles();
+    ResponseEntity<ResourceCollection> updateAvailableVehicles();
 }
