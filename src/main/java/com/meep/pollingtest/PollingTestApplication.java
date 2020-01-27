@@ -1,4 +1,4 @@
-package com.meep.pollingTest;
+package com.meep.pollingtest;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
