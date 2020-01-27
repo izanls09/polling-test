@@ -10,4 +10,6 @@ public class ResourceServiceImpl implements ResourceService {
     public Collection<Resource> updateAvailableVehicles() {
         return null;
     }
+
+
 }
