@@ -5,7 +5,7 @@ import lombok.NoArgsConstructor;
 
 @Data
 @NoArgsConstructor
-public class Resource {
+public class Vehicle {
             private String id;
             private String name;
             private float x;
