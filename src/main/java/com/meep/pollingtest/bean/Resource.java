@@ -10,7 +10,7 @@ public class Resource {
             private String name;
             private float x;
             private float y;
-            private String licensePlate;
+            private String licencePlate;
             private int range;
             private int batteryLevel;
             private int seats;

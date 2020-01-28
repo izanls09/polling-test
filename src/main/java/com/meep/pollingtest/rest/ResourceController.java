@@ -1,7 +1,7 @@
 package com.meep.pollingtest.rest;
 
-import com.meep.pollingtest.bean.ResourceCollection;
-import com.meep.pollingtest.service.ResourceServiceImpl;
+import com.meep.pollingtest.bean.Resource;
+import com.meep.pollingtest.service.ResourceService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -13,10 +13,10 @@ import org.springframework.web.bind.annotation.RestController;
 public class ResourceController {
 
     @Autowired
-    private ResourceServiceImpl resourceServiceImpl;
+    private ResourceService resourceService;
 
     @RequestMapping(value = "/vehicles/available/", method = RequestMethod.GET, produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<ResourceCollection> getAvailableVehicles() {
-        return resourceServiceImpl.updateAvailableVehicles();
+    public ResponseEntity<Resource[]> getAvailableVehicles() {
+        return resourceService.updateAvailableVehicles();
     }
 }
